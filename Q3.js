@@ -17,10 +17,11 @@ const hamburger = {
 const secondBurger = structuredClone(hamburger);
 const thirdBurger = structuredClone(hamburger);
 
-// Quanti oggetti sono stati creati in memoria durante 
-// l'esecuzione di questo codice? 
+// Quanti oggetti sono stati creati in memoria durante
+// l'esecuzione di questo codice?
 
 //RESP:
+//structuredclone duplica l oggetto e gli oggetti annidati
 // 3 objects: hamburger, secondBurger, thirdBurger
-// dentro ogni oggetto ce ne sono altri 2
-// quindi in totale 6 oggetti
+// dentro ogni oggetto ce ne sono altri 2 (3 maker, 3 restaurant)
+// quindi in totale 9 oggetti

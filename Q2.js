@@ -6,6 +6,7 @@ const hamburger = {
     ingredients: ["Cheese", "Meat", "Bread", "Tomato"]
 };
 
+//nuovo hamburger che ha come ingredients la reference a stesso array
 const secondBurger = { ...hamburger };
 secondBurger.ingredients[0] = "Salad";
 
@@ -17,4 +18,4 @@ console.log(secondBurger.ingredients[0]); // Salad
 // Senza lanciare il codice, riesci a prevedere cosa viene stampato in console ?
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
 //RESP:
-//  Sono state creati 2 arrays: hamburger e secondBurger
+//  Sono state creati 3 arrays: hamburger e secondBurger e ingredients(questo non e duplicato)

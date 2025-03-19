@@ -15,16 +15,19 @@ const hamburger = {
 };
 
 const newRestaurant = { ...hamburger.maker.restaurant };
+//4 (+restaurant)
 newRestaurant.name = "Hyur's II";
 newRestaurant.address = "Second Street, 12";
-const secondBurger = { ...hamburger };
+const secondBurger = { ...hamburger };//qui se uso jsone parse posso copiare anche annidate-non ci sono oggetti complessi
+//5(+hamburger)
 secondBurger.maker.restaurant = newRestaurant;
 secondBurger.maker.name = "Chef Hyur";
 
 console.log(hamburger.maker.name); // chef hyur
 console.log(secondBurger.maker.name); // chef hyur
-console.log(hamburger.maker.restaurant.name); // ?
-console.log(secondBurger.maker.restaurant.name); // ?
+console.log(hamburger.maker.restaurant.name); // Hyur's II
+console.log(secondBurger.maker.restaurant.name); // Hyur's II
 
 // Senza lanciare il codice, riesci a prevedere cosa viene stampato in console ?
+
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
